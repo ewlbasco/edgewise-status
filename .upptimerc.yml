@@ -10,21 +10,17 @@ sites:
   - name: Client Account Management
     url: https://client-account-management.vercel.app
     __dangerous__enable_resolve_on_error: true
-  - name: VDAB Deck
-    url: https://cynthia-diane.vercel.app
-    __dangerous__enable_resolve_on_error: true
-
 status-website:
   baseUrl: /upptime
-  name: Edgewise Status
+  name: Status
   logoUrl: ""
-  introTitle: "**Edgewise** service status"
-  introMessage: "Uptime and response-time monitoring for Edgewise deployed applications."
+  introTitle: "Service status"
+  introMessage: "Uptime and response-time monitoring."
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/ewlbasco/upptime
+      href: https://github.com/ewlbasco/uptime-monitor
 
 assignees:
   - ewlbasco
