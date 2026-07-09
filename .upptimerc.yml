@@ -1,31 +1,63 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime Configuration
+# https://github.com/upptime/upptime
+# Fork https://github.com/upptime/upptime into your GitHub account,
+# then replace this file in your fork's root.
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Vibe Coders Manual
+    url: https://vibe-coders-manual.vercel.app
+    __dangerous__enable_resolve_on_error: true
+  - name: Client Account Management
+    url: https://client-account-management.vercel.app
+    __dangerous__enable_resolve_on_error: true
+  - name: VDAB Deck
+    url: https://cynthia-diane.vercel.app
+    __dangerous__enable_resolve_on_error: true
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /upptime
+  name: Edgewise Status
+  logoUrl: ""
+  introTitle: "**Edgewise** service status"
+  introMessage: "Uptime and response-time monitoring for Edgewise deployed applications."
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/ewlbasco/upptime
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - ewlbasco
+
+skipDeleteIssues: true
+
+i18n:
+  activeIncidents: Incidents actifs
+  allSystemsOperational: Tous les systèmes opérationnels
+  incidentReport: Rapport d'incident
+  activeIncidentSummary: Résumé
+  incidentBack: ← Retour
+  pastIncidents: Incidents passés
+  otherIncidents: Autres incidents
+  up: Opérationnel
+  degraded: Dégradé
+  down: Hors ligne
+  responseTimeGraph: Temps de réponse
+  ms: ms
+  responseTime: Temps de réponse
+  duration: Durée
+  statusPage: Statut
+  liveStatus: Statut en direct
+  rate: Taux
+  incidentHistory: Historique des incidents
+
+user-agent: ewlbasco
+
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/5 * * * *"
